@@ -1,0 +1,16 @@
+.MovieCard {
+    margin: 20px;
+    width: 200px;
+}
+
+.MoviePoster {
+    width: 100%;
+    min-height: 200px * 1.5;
+    height: 200px * 1.5;
+    overflow: hidden;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

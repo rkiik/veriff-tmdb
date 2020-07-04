@@ -1,0 +1,19 @@
+ :root {
+    --tmdbDarkBlue: rgb(3, 37, 65);
+}
+
+.Header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    min-height: 300px;
+    height: calc(100vh / 2.5);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--tmdbDarkBlue);
+    color: #fff;
+}
