@@ -31,9 +31,10 @@ function Movie(props: any) {
             fetchSimilarMovies(),
             fetchRecommendations()
         ])
-    }, []);
+    }, []); //eslint-disable-line
     
     console.log("Verified?", props.verifiedAdult)
+    console.log({similarMovies, recommendedMovies});
   return (
     <div>
         {true && <VeriffModal/>}

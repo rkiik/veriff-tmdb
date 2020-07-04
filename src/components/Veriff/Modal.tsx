@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Veriff from '@veriff/js-sdk';
 import { createVeriffFrame, MESSAGES } from '@veriff/incontext-sdk';
 import { setVerifiedAdultStatus }from '../../store/actions';
@@ -35,7 +35,7 @@ function Modal(props: any) {
             submitBtnText: 'Get verified',
             loadingText: 'Please wait...'
         });
-    }, []);
+    }, []); //eslint-disable-line
 
   return (
     <div id='veriff-root'></div>

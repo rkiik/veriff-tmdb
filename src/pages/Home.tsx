@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { getTrending } from '../api/tmdbClient';
 import MovieCard from '../components/Movie/MovieCard';
 import Header from '../components/Header/Header';
-import { addListener } from "cluster";
 
 export default function Home() {
     const [trendingMovies, setMovies] = useState([]);
