@@ -6,7 +6,7 @@
     "@reduxjs/toolkit": "^1.4.0",
     "@types/react-redux": "^7.1.9",
     "@veriff/incontext-sdk": "^1.1.0",
-    "@veriff/js-sdk": "https://github.com/msembinelli/veriff-js-sdk/tarball/fix-types",
+    "@veriff/js-sdk": "^1.1.1",
     "axios": "^0.19.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -30,9 +30,10 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
+    "start": "npm run fix-veriff && react-scripts start",
+    "build": "npm run fix-veriff && react-scripts build",
+    "test": "react-scripts test",
+    "fix-veriff": "cat node_modules/@veriff/js-sdk/package.json | sed -i -e 's#\"lib/src/index.d.ts\"#\"lib/index.d.ts\"#g' node_modules/@veriff/js-sdk/package.json"
   },
   "eslintConfig": {
     "extends": "react-app"
