@@ -1,19 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-// import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './features/Home';
+import Movie from './features/Movie';
 
-import Home from './pages/Home';
-import Movie from './pages/Movie';
-
-function App() {
-  return (
-    <Router>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/movie/:id" component={Movie} />
-    </Router>
-  );
-}
-
+const App: React.FC = () => {
+    return (
+        <Router>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/movie/:id" component={Movie} />
+        </Router>
+    );
+};
 
 export default App;

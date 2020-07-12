@@ -1,0 +1,18 @@
+.Navigation {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+
+    h3 {
+        margin: 0.5em 0;
+    }
+
+    a {
+        color: #333;
+
+        &:visited {
+            color: #333;
+        }
+    }
+}

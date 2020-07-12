@@ -1,17 +1,21 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import Search from './Search/Search';
+import Search from './Search';
 
-export default function Header({ ...props }: {
+interface HeaderProps {
     onSearch: (query: string) => void;
-} ) {
+}
+
+const Header: React.FC<HeaderProps> = ({ onSearch }) => {
     return (
         <section className={styles.Header}>
-            <div>
+            <div className={styles.HeaderContent}>
                 <h2>Welcome.</h2>
                 <h3>Millions of movies, TV shows and people to discover. Explore now. (Safely)</h3>
-                <Search {...props}/>
+                <Search onSearch={onSearch} />
             </div>
         </section>
     );
 };
+
+export default Header;

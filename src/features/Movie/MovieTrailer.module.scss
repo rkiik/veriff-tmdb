@@ -1,0 +1,29 @@
+.MovieTrailer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1337;
+    margin: 0;
+    padding: 0;
+}
+
+.MovieTrailerClose {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOTYgOTYiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIGZpbGw9IiNBQUFBQUIiIHBvaW50cz0iOTYsMTQgODIsMCA0OCwzNCAxNCwwIDAsMTQgMzQsNDggMCw4MiAxNCw5NiA0OCw2MiA4Miw5NiA5Niw4MiA2Miw0OCAiLz48L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}

@@ -1,16 +1,24 @@
 export const SET_FAVORITE_MOVIE = 'SET_FAVORITE_MOVIE';
 export const SET_VERIFIED_ADULT_STATUS = 'SET_VERIFIED_ADULT_STATUS';
+export const REMOVE_FAVORITE_MOVIE = 'REMOVE_FAVORITE_MOVIE';
 
 export const setFavouriteMovie = (movieID: string) => (dispatch: any, getState: any) => {
-  dispatch({
-    type: SET_FAVORITE_MOVIE,
-    movieID
-  });
+    dispatch({
+        type: SET_FAVORITE_MOVIE,
+        movieID,
+    });
+};
+
+export const removeFavouriteMovie = (movieID: string) => (dispatch: any, getState: any) => {
+    dispatch({
+        type: REMOVE_FAVORITE_MOVIE,
+        movieID,
+    });
 };
 
 export const setVerifiedAdultStatus = (status: boolean) => (dispatch: any, getState: any) => {
-  dispatch({
-    type: SET_VERIFIED_ADULT_STATUS,
-    status
-  });
+    dispatch({
+        type: SET_VERIFIED_ADULT_STATUS,
+        status,
+    });
 };

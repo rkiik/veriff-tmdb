@@ -1,0 +1,78 @@
+.SwitchCheckbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+
+  &:checked + .SwitchLabel .SwitchButton {
+    left: 100%;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  &:checked + .SwitchLabel .SwitchOffText {
+    color: var(--genoma-color-primary-600);
+  }
+
+  &:not(:checked) + .SwitchLabel .SwitchOffText {
+    color: white;
+  }
+
+  &:checked + .SwitchLabel .SwitchOnText {
+    color: white;
+  }
+
+  &:not(:checked) + .SwitchLabel .SwitchOnText {
+    color: var(--genoma-color-primary-600);
+  }
+}
+
+.SwitchLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background: white;
+  border: 1px solid var(--genoma-color-primary-600);
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+
+  .SwitchButton {
+    display: block;
+    content: 'asdasd';
+    color: palevioletred;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 50px;
+    border-radius: 45px;
+    transition: 0.2s;
+    background: var(--genoma-color-primary-600);
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+    z-index: 5;
+  }
+
+  &:active .react-switch-button {
+    width: 60px;
+  }
+
+  .SwitchOffText, .SwitchOnText {
+    position: absolute;
+    z-index: 10;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .SwitchOffText {
+    left: 0;
+    margin-left: 28px;
+  }
+
+  .SwitchOnText {
+    right: 0;
+    margin-right: 12px;
+  }
+}

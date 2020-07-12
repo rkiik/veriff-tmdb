@@ -1,0 +1,24 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+    min-height: 300px;
+    height: calc(100vh / 2);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    background: linear-gradient(
+            to right,
+            rgba(0, 78, 95, 0.8) 0%,
+            rgba(0, 78, 95, 0) 100%
+        ),
+        url('https://image.tmdb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,004e5f,00b0d6)//d7JUXVvjvVCXWs1mlpyO5ESdWdT.jpg');
+    transition: 0.3s ease background;
+}
+
+.HeaderContent {
+    padding: 0 20px;
+}

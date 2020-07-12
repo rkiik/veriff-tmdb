@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --genoma-font-size-h1: 40px;
+    --genoma-font-size-h2: 28px;
+    --genoma-font-size-h3: 24px;
+    --genoma-font-size-h4: 12px;
+    --genoma-font-size-caption: 14px;
+    --genoma-font-size-body: 16px;
+    --genoma-atom-box-shadow: 0 2px 4px 0 rgba(34,35,40,0.16);
+    --genoma-atom-bezier: cubic-bezier(0.42,0,0.58,1);
+    --genoma-color-primary-600: #004e5f;
+    --genoma-color-primary-500: #007a74;
+    --genoma-color-primary-400: #00b4aa;
+    --genoma-color-primary-300: #b4e6e6;
+    --genoma-color-primary-200: #c7eded;
+    --genoma-color-primary-100: #def7f7;
+    --genoma-color-secondary-500: #47418d;
+    --genoma-color-secondary-400: #978ffa;
+    --genoma-color-secondary-300: #e0dffa;
+    --genoma-color-secondary-200: #eeecff;
+    --genoma-color-secondary-100: #f2f0ff;
+    --genoma-color-positive-600: #005f59;
+    --genoma-color-positive-500: #49de72;
+    --genoma-color-positive-400: #69d186;
+    --genoma-color-positive-300: #c8ebd2;
+    --genoma-color-positive-200: #d3ede2;
+    --genoma-color-positive-100: #dff2ea;
+    --genoma-color-negative-600: #4d2e3b;
+    --genoma-color-negative-500: #ff5b5b;
+    --genoma-color-negative-400: #ff9494;
+    --genoma-color-negative-300: #ffd2d2;
+    --genoma-color-negative-200: #fae3e7;
+    --genoma-color-negative-100: #faebee;
+    --genoma-color-warning-600: #482e4d;
+    --genoma-color-warning-500: #ffb963;
+    --genoma-color-warning-400: #ffc680;
+    --genoma-color-warning-300: #ffebd2;
+    --genoma-color-warning-200: #f8e8dd;
+    --genoma-color-warning-100: #faeee6;
+    --genoma-color-base-500: #222328;
+    --genoma-color-base-400: #505366;
+    --genoma-color-base-300: #bdc0cf;
+    --genoma-color-base-200: #e6ebf4;
+    --genoma-color-base-100: #fafafc;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // Woverflow-x: hidden;
+  line-height: 1.65;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+    max-width: 100vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+    padding: 0 20px 200px;
+}
+
+section {
+  max-width: 100%;
+}
+
+html {
+  font-size: 100%;
+  @media only screen and (max-width: 768px) {
+     font-size: 75%;
+  }
+}
+
+p {margin-bottom: 1.15rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+}
+
+h2 {font-size: 2.441em;}
+
+h3 {font-size: 1.953em;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
+
+small, .text_small {font-size: 0.8em;}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1, h2, h3, h4, h5 {
+        color: var(--genoma-color-primary-600);
+        margin: 1em 0;
+    }
+    
+
+    @media only screen and (max-width: 768px) {
+        display: block;
+    }
+}
+
+a {
+      text-decoration: none;
+
+}
