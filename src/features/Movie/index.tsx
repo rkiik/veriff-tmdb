@@ -15,24 +15,24 @@ const MoviePage: React.FC<Movie> = () => {
     const [similarMovies, setSimilarMovies]: [any, any] = useState([]);
     const [recommendedMovies, setRecommendedMovies]: [any, any] = useState([]);
 
-    const fetchMovie = async () => {
-        const { data } = await getMovie(movieId);
-        setMovie(data);
-    };
-
-    const fetchSimilarMovies = async () => {
-        const { data } = await getSimilarMovies(movieId);
-        setSimilarMovies(data.results);
-    };
-
-    const fetchRecommendations = async () => {
-        const { data } = await getRecommendations(movieId);
-        setRecommendedMovies(data.results);
-    };
-
     useEffect(() => {
+        const fetchMovie = async () => {
+            const { data } = await getMovie(movieId);
+            setMovie(data);
+        };
+
+        const fetchSimilarMovies = async () => {
+            const { data } = await getSimilarMovies(movieId);
+            setSimilarMovies(data.results);
+        };
+
+        const fetchRecommendations = async () => {
+            const { data } = await getRecommendations(movieId);
+            setRecommendedMovies(data.results);
+        };
+
         Promise.all([fetchMovie(), fetchSimilarMovies(), fetchRecommendations()]);
-    }, []);
+    }, [movieId]);
 
     return (
         <main>

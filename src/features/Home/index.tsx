@@ -11,12 +11,12 @@ const HomePage: React.FC = () => {
     const [searchedMovies, setSearchedMovies] = useState<any[]>([]);
     const [trendingPeriod, setTrendingPeriod] = useState(false); // stupid solution, false === 'day', true === 'week'
 
-    const fetchTrendingMovies = async () => {
-        const { data } = await getTrending('movie', trendingPeriod ? 'day' : 'week');
-        setTrendingMovies(data.results);
-    };
-
     useEffect(() => {
+        const fetchTrendingMovies = async () => {
+            const { data } = await getTrending('movie', trendingPeriod ? 'day' : 'week');
+            setTrendingMovies(data.results);
+        };
+
         fetchTrendingMovies();
     }, [trendingPeriod]);
 

@@ -26,8 +26,11 @@ module.exports = {
         {
             files: ['**/*.tsx'],
             rules: {
-                'react/prop-types': 'off',
+                'react/prop-types': 'off'
             },
         },
     ],
+    rules: {
+        '@typescript-eslint/no-explicit-any': 'off'
+    }
 };
